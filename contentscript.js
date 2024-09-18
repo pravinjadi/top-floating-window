@@ -14,10 +14,12 @@ if (!document.getElementById("floating-window")) {
   floatingWindow.style.height = "300px";
   floatingWindow.style.backgroundColor = "white";
   floatingWindow.style.border = "2px solid black";
+  floatingWindow.style.borderRadius = "10px";
   floatingWindow.style.zIndex = "9999"; // Ensure it stays on top of other elements
   floatingWindow.style.resize = "both";
   floatingWindow.style.overflow = "hidden";
 
+  
   // Floating window header (for dragging)
   const floatingHeader = document.createElement("div");
   floatingHeader.id = "floating-header";
